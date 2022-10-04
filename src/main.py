@@ -6,9 +6,10 @@ def convert(from_filename, to_filename):
     document = docx.Document(from_filename)
 
     for paragraph in document.paragraphs:
-        for run in paragraph.runs:
-            run.text = run.text.replace('、','，')
-            run.text = run.text.replace('。','．')
+        if(paragraph.text != ''):
+            for run in paragraph.runs:
+                run.text = run.text.replace('、','，')
+                run.text = run.text.replace('。','．')
     
     document.save(to_filename)
 
