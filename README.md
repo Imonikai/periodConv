@@ -13,3 +13,6 @@ docxファイルの句読点を全角ピリオドとカンマに変換（制作�
 **テーブル、テキストボックス内のテキストは変換の対象外です**
 
 PySimpleGUIとpython-docxを使っています。
+
+![スクリーンショット (55)](https://user-images.githubusercontent.com/108214765/193722534-f68138f7-ecd8-4ced-9ca1-4dbf92a62fb5.png)
+
