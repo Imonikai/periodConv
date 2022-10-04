@@ -20,7 +20,7 @@ layout = [
     [sg.Submit('変換'), sg.Cancel('やめる')],
 ]
 
-window = sg.Window('docxファイルの句読点をカンマピリオドに変換', layout)
+window = sg.Window('docxファイルの句読点をピリオドとカンマに変換', layout)
 while True:
     event, values = window.read()
 
