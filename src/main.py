@@ -25,7 +25,7 @@ while True:
     event, values = window.read()
 
     if(values['from'] != '' and values['to'] != '' and event == '変換'):
-        convert(values['from'], f'{values["to"]}.docx')
+        convert(values['from'], values['to'])
         break
 
     if event in [None, 'やめる']:
