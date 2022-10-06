@@ -24,11 +24,11 @@ window = sg.Window('docxファイルの句読点をピリオドとカンマに�
 while True:
     event, values = window.read()
 
-    if(values['from'] != '' and values['to'] != '' and event == '変換'):
-        convert(values['from'], values['to'])
-        break
-
     if event in [None, 'やめる']:
         break
+
+    if(values['from'] != '' and values['to'] != '' and event == '変換'):
+        convert(values['from'], values['to'])
+        sg.popup_ok('変換しました')
 
 window.close()
